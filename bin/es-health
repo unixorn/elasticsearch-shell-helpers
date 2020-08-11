@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#
+# Can't remember the url path, so made a helper
+
+set -o pipefail
+
+exec curl -X GET "$1:9200/_cat/health?v&pretty"
